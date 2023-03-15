@@ -1,10 +1,20 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        byte minhaIdade = 28;
-        String fristname = "William " + "Sarti";
+        //first number:
+        Scanner numeroOneScanner =  new Scanner(System.in);
+        System.out.print("Enter the first number:");
+        int numeroOne = numeroOneScanner.nextInt();
 
-        System.out.println(minhaIdade);
-        System.out.println(fristname.toUpperCase());
+        //second number:
+        Scanner numeroTwoScanner = new Scanner(System.in) ;
+        System.out.print("Enter the second number:");
+        int numeroTwo = numeroTwoScanner.nextInt();
+
+        //Result
+        int resul = numeroOne + numeroTwo;
+        System.out.println("The result is\n " + resul);
     }
 
 }
